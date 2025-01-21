@@ -1,3 +1,20 @@
+<h2>Con fines didacticos en este proyecto trabaje con my json server typicode.com</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
