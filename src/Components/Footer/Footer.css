@@ -1,0 +1,39 @@
+.footer {
+    background-color: #edaabf; /* River Bed */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__socials a {
+    color: #4fb5dd;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__socials a:hover {
+    color: #f650a6; /* Wild Strawberry */
+  }
+  
+  .footer__text {
+    font-family: "Tinos", serif;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  @media (max-width: 600px) {
+    .footer__icons {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .footer__text {
+      font-size: 14px;
+    }
+  }

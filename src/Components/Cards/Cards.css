@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffee75; /* Shakespeare */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card__image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .card__title {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #424c5d; /* Bahama Blue */
+    text-align: center;
+    font-family: "Tinos", serif;
+  }
+  

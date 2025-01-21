@@ -1,0 +1,179 @@
+/*.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white; /* River Bed */
+
+    /* Galeria.css */
+.galeria {
+  padding: 20px;
+  background-color: #ffee75;
+}
+
+.galeria h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.galeria__videos,
+.galeria__favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.galeria__videos p,
+.galeria__favorites p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.galeria__videos .card,
+.galeria__favorites .card {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria__videos .card:hover,
+.galeria__favorites .card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card .favorite-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card .favorite-icon:hover {
+  transform: scale(1.1);
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para las secciones de favoritos */
+.galeria__favorites {
+  background-color: #f8f8f8;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.galeria__favorites h2 {
+  color: #007bff;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .galeria h2 {
+    font-size: 1.5rem;
+  }
+
+  .galeria__videos .card,
+  .galeria__favorites .card {
+    width: 100%;
+    height: auto; /* Hacemos la altura flexible para móviles */
+  }
+
+  .card img {
+    height: 200px; /* Ajustamos la altura de la imagen en dispositivos pequeños */
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .galeria__videos .card,
+  .galeria__favorites .card {
+    width: 45%; /* 2 cards por fila */
+  }
+
+  .card img {
+    height: 220px; /* Ajustamos la altura de la imagen para tablets */
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card button {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 1024px) {
+  .galeria__videos .card,
+  .galeria__favorites .card {
+    width: 22%; /* 4 cards por fila */
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card button {
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+  
+  

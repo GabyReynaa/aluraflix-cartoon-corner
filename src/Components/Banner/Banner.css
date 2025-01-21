@@ -1,0 +1,44 @@
+.banner {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+/*background: linear-gradient(to right, #00689b, #4fb5dd);*/
+color: white;
+height: 300px;
+width: 100%;
+padding: 20px;
+background-image: url("../images/Fondo1.jpg"); /* Asegúrate de tener esta imagen en src/assets */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+ 
+.banner__content h1 {
+font-family: "Sixtyfour Covergence", sans-serif;
+font-size: 3rem;
+margin: 0;
+color: #424c5d;
+text-shadow: 1px 1px 2px black;
+background-color: #edaabf;
+
+} 
+
+.banner__content p {
+font-family: "Tinos", serif;
+font-size: 1.2rem;
+margin-top: 10px;
+color: black;
+text-shadow: 1px 1px 2px black;
+background-color: #4fb5dd59;
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 2rem;
+  }
+
+  .banner__subtitle {
+    font-size: 1rem;
+  }
+}
